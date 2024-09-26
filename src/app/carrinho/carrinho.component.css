@@ -112,3 +112,27 @@ input[type="button"]:hover {
         font-size: 30px;
     }
 }
+
+@media (max-width: 400px){
+
+    .foto {
+        width: 70px;
+    }
+
+    input[type="button"] {
+        margin-top: 20px;
+    }
+
+    #back a {
+        font-size: 15px;
+    }
+
+    #center p {
+        margin: 50px;
+    }
+
+    .buttons {
+        display: inline-block;
+        text-align: center;
+    }
+}

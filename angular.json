@@ -13,7 +13,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/pw-lucas-fabiano",
+            "outputPath": "docs",
+            "baseHref": "/Beat_Store/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
