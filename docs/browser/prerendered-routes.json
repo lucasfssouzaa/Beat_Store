@@ -1,0 +1,11 @@
+{
+  "routes": [
+    "/",
+    "/cadastro",
+    "/carrinho",
+    "/esqueci-senha",
+    "/login",
+    "/produto",
+    "/vitrine"
+  ]
+}
