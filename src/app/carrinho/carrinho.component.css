@@ -1,0 +1,114 @@
+/* Vazio */
+
+#vazio {
+    text-align: center;
+    height: calc(100vh - 200px);
+}
+
+#center {
+    margin-top: 100px;
+}
+
+#center p {
+    margin: 100px;
+    font-size: 40px;
+}
+
+#center h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+#back a {
+    color: black;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+/* Carrinho */
+
+#carrinho {
+    padding: 20px 100px;
+    min-height: calc(100vh - 150px);
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border: 2px solid gray;
+    padding: 10px;
+}
+
+.desc p {
+    margin-left: 20px;
+}
+
+.foto {
+    width: 100px;
+}
+
+.delete {
+    display: flex;
+    cursor: pointer; 
+    align-items: center;
+    margin-left: auto;
+}
+
+.delete a {
+    color: black;
+    text-decoration: none;
+}
+
+input[type="button"] {
+    font-family: 'Roboto', sans-serif;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+input[type="button"]:hover {
+    background-color: #555;
+  }
+
+#total p {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#esvaziar {
+    margin-right: auto;
+}
+
+#comprar {
+    margin-left: auto;
+}
+
+@media (max-width: 426px){
+    #carrinho {
+        padding: 20px 50px;
+    }
+
+    input[type="button"] {
+        font-size: 15px;
+    }
+
+    #back a {
+        font-size: 20px;
+    }
+
+    #center p {
+        font-size: 30px;
+    }
+}

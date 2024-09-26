@@ -1,0 +1,36 @@
+<section>
+    <div id="produto">
+      <img src="{{item.codigo}}.jpg" class="camiseta">
+    </div>
+    <div id="desc">
+      <h1>{{item.nome}} COLEÇÃO {{item.colecao}}</h1>
+
+      <h2 id="preco">R$ {{item.preco}},00</h2>
+      <p>{{item.desc}}</p>
+      <ul>
+        <li *ngIf="item.nome !== 'Tênis'">Tecido: <i>{{item.tecido}}</i></li>
+        <li>Cor: <i>{{item.cor}}</i></li>
+        <li>Tamanhos disponíveis:</li>
+      </ul>
+      <div *ngIf="item.nome !== 'Tênis'">
+        <div class="tamanhos">
+          <div class="opcao" (click)="tamanhoSelecionado = 'P'" [class.selecionado]="tamanhoSelecionado === 'P'">P</div>
+          <div class="opcao" (click)="tamanhoSelecionado = 'M'" [class.selecionado]="tamanhoSelecionado === 'M'">M</div>
+          <div class="opcao" (click)="tamanhoSelecionado = 'G'" [class.selecionado]="tamanhoSelecionado === 'G'">G</div>
+          <div class="opcao" (click)="tamanhoSelecionado = 'GG'" [class.selecionado]="tamanhoSelecionado === 'GG'">GG</div>
+        </div>
+        
+      </div>
+      <div class="tam" *ngIf="item.nome == 'Tênis'">
+        <div class="tamanhos">
+          <div class="opcao" (click)="tamanhoSelecionado = '38'" [class.selecionado]="tamanhoSelecionado === '38'">38</div>
+          <div class="opcao" (click)="tamanhoSelecionado = '39'" [class.selecionado]="tamanhoSelecionado === '39'">39</div>
+          <div class="opcao" (click)="tamanhoSelecionado = '40'" [class.selecionado]="tamanhoSelecionado === '40'">40</div>
+          <div class="opcao" (click)="tamanhoSelecionado = '41'" [class.selecionado]="tamanhoSelecionado === '41'">41</div>
+          <div class="opcao" (click)="tamanhoSelecionado = '42'" [class.selecionado]="tamanhoSelecionado === '42'">42</div>
+        </div>
+      </div>
+      <a (click)="adicionarAoCarrinho(item)"><input type="button" value="Adicionar ao Carrinho"></a>
+    </div>
+  </section>
+  

@@ -1,0 +1,56 @@
+
+
+input {
+    background-color: white;
+    color: Black;
+    border-radius: 5px;
+}
+.cadastro-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: rgb(26, 26, 26); 
+    padding: 20px;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: calc(100vh - 80px);
+}
+a {
+    color: orange;
+}
+
+h2, p {
+    color: white;
+}
+
+main {
+    width: 100%;
+    background-image: url('../../../public/background-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 80px);
+    padding: 1px;
+}
+
+::ng-deep footer {
+    display: none;
+  }
+
+::ng-deep #dev {
+    display: none;
+  }
+
+::ng-deep body {
+    background-color: black;
+  }
+
+  @media (max-width: 426px){
+    .cadastro-box {
+      width: 70%;
+    }
+  }

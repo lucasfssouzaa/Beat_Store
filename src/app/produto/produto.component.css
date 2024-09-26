@@ -1,0 +1,135 @@
+section {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 80px;
+  }
+  
+  #produto {
+    flex: 1;
+  }
+  
+  #desc {
+    flex: 2;
+    padding: 20px;
+    max-width: 60%;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-right: 50px;
+  }
+  
+  #desc h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: auto;
+    text-transform: uppercase;
+  }
+
+  #desc h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0px;
+    color: orange;
+  }
+  
+  #desc p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: justify;
+  }
+  
+  #desc ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #desc ul li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  input[type="button"] {
+    font-family: 'Roboto', sans-serif;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="button"]:hover {
+    background-color: #555;
+  }
+  
+.tamanhos {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+  margin-left: 0;
+}
+
+.opcao {
+  padding: 5px 15px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+}
+
+.opcao:hover {
+  border-color: #8a8a8a;
+}
+
+.selecionado {
+  background-color: orange;
+  color: white;
+  border-color: orange;
+}
+
+
+::ng-deep footer {
+  display: none;
+}
+
+::ng-deep #dev {
+  display: none;
+}
+
+@media (max-width: 426px){
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #produto, #desc {
+    width: 100%;
+    text-align: center;
+  }
+
+  #produto img {
+    width: 100%;
+  }
+
+  #desc {
+    max-width: 100%;
+    width: 100%;
+  }
+}

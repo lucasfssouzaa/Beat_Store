@@ -1,0 +1,24 @@
+<div id="menu">
+  <ul id="setores">
+    <li><a (click)="filtrar('Camiseta')">Camisetas</a></li>
+    <li><a (click)="filtrar('Moletom')">Moletom</a></li>
+    <li><a (click)="filtrar('Tênis')">Tênis</a></li>
+  </ul>
+</div>
+<main>
+    <div class="menu" *ngIf="filtro == ''">
+        <img src="banner3.png" class="banner" alt="camisetas oversized coleção especial arte urbana">
+    </div>
+    <div *ngFor="let item of itens">
+      <div *ngIf="filtro == '' || filtro == item.nome" class="produto">
+        <div class="prod">
+          <a (click)="abrirDetalhe(item)">
+            <img src="{{item.codigo}}.jpg" class="camiseta" alt="camiseta preta grafite">
+            <p>{{item.nome}}</p>
+            <p>Coleção {{item.colecao}}</p>
+            <p>R${{item.preco}},00</p>
+          </a>
+        </div>
+      </div>
+    </div>
+</main>

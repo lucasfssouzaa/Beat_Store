@@ -1,0 +1,51 @@
+
+
+input {
+    background-color: white;
+    color: Black;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.login-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: rgb(26, 26, 26); 
+    padding: 50px 20px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+a {
+    color: orange;
+}
+
+h2, p {
+    color: white;
+}
+section {
+    width: 100%;
+    background-image: url('../../../public/background-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 80px);
+    padding: 1px;
+}
+
+::ng-deep footer {
+    display: none;
+  }
+
+::ng-deep #dev {
+    display: none;
+  }
+
+  @media (max-width: 426px){
+    .login-box {
+      width: 70%;
+    }
+  }

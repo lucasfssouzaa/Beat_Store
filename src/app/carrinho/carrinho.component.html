@@ -1,0 +1,27 @@
+<div *ngIf="vazio == true" id="vazio">
+    <div id="center">
+        <h1> Seu Carrinho está vazio</h1>
+        <P id="back"> <a href="">voltar para o Site </a></P>
+    </div>
+</div>
+
+<div *ngIf="vazio == false" id="carrinho">
+    <div *ngFor="let item of cesta.itemCarrinho" class="item">
+        <img src="{{item.item.codigo}}.jpg" class="foto" alt="{{item.item.nome}}">
+        <div class="desc">
+            <p>{{item.item.nome}}</p>
+            <p>R$ {{item.item.preco}},00</p>
+            <p>Tamanho: {{item.tamanho}}</p>
+        </div>
+        <div class="delete">
+            <a (click)="remover(item)"><i class="material-icons">delete</i></a>
+        </div>
+    </div>
+    <div id="total">
+        <p>Total: R$ {{total}},00</p>
+    </div>
+    <div class="buttons">
+        <a (click)="esvaziar()" id="esvaziar"><input type="button" value="Esvaziar Carrinho"></a>
+    <a id="comprar"><input type="button" value="Finalizar Compra"></a>
+    </div>
+</div>
