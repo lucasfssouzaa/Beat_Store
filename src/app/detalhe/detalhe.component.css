@@ -75,12 +75,12 @@ section {
     background-color: #555;
   }
   
-.tamanhos {
-  display: flex;
-  gap: 10px;
-  margin: 10px;
-  margin-left: 0;
-}
+  .tamanhos {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    margin-left: 0;
+  }
 
 .opcao {
   padding: 5px 15px;

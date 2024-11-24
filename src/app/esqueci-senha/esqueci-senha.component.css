@@ -1,11 +1,12 @@
 
 
-input {
+input , button{
     background-color: white;
     color: Black;
     border-radius: 5px;
     margin-top: 10px;
 }
+
 .login-box {
     display: flex;
     flex-direction: column;
@@ -34,6 +35,7 @@ section {
     background-repeat: no-repeat;
     height: calc(100vh - 80px);
     padding: 1px;
+    color: white;
 }
 
 ::ng-deep footer {

@@ -9,8 +9,12 @@
     <div class="menu" *ngIf="filtro == ''">
         <img src="banner3.png" class="banner" alt="camisetas oversized coleção especial arte urbana">
     </div>
+<div id="pesquisa">
+    <input type="text" [(ngModel)]="pesquisa" placeholder="Pesquisar...">
+    <span class="material-symbols-outlined" (click)="atualizarPesquisa(pesquisa)">search</span>
+</div>
     <div *ngFor="let item of itens">
-      <div *ngIf="filtro == '' || filtro == item.nome" class="produto">
+      <div *ngIf="filtro === ''|| item.nome.toLowerCase().includes(filtro.toLowerCase())" class="produto">
         <div class="prod">
           <a (click)="abrirDetalhe(item)">
             <img src="{{item.codigo}}.jpg" class="camiseta" alt="camiseta preta grafite">

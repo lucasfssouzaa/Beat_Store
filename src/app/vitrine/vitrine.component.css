@@ -61,6 +61,20 @@ a {
     border-bottom: 2px solid white;
   }
 
+#pesquisa {
+    align-items: center;
+    display: flex;
+    margin: 10px 0 0 30px;
+}
+
+span {
+  cursor: pointer;
+}
+
+span:hover {
+  color: orange;
+}
+
   @media (max-width: 768px){
     .produto {
         max-width: 49.9999%;

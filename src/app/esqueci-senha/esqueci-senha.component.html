@@ -3,11 +3,12 @@
         <h2>Recuperar Senha</h2>
     <div class="div-login">
         <p id="usu-txt">Informe seu e-mail</p>
-        <input id="usu" type="text" name="usuario" placeholder="e-mail">
+        <input type="email" [(ngModel)]="obj.email"><br>
     </div>
     <div id="login">
-        <input type="submit" value="Enviar"> 
+        <button (click)="recuperaSenha();">Enviar</button>
     </div>
+    {{mensagem}}
     </div>
 </section>
 

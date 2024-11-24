@@ -1,24 +1,10 @@
-
-
 input {
     background-color: white;
-    color: Black;
+    color: black;
     border-radius: 5px;
+    width: 100%;
 }
-.cadastro-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    background-color: rgb(26, 26, 26); 
-    padding: 20px;
-    margin: auto;
-    margin-top: 70px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-height: calc(100vh - 80px);
-}
+
 a {
     color: orange;
 }
@@ -35,6 +21,37 @@ main {
     background-repeat: no-repeat;
     height: calc(100vh - 80px);
     padding: 1px;
+    color: white;
+    align-items: center;
+}
+
+#cadastro {
+    margin: 40px 30%;
+    background-color: rgb(50, 50, 50);
+    align-items: center;
+    justify-content: center;
+    padding: 20px 100px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#cadastro p {
+    text-align: left;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: darkorange;
 }
 
 ::ng-deep footer {
@@ -49,8 +66,13 @@ main {
     background-color: black;
   }
 
-  @media (max-width: 426px){
-    .cadastro-box {
-      width: 70%;
+  @media (max-width: 770px){
+    #cadastro {
+        margin: 40px 20%;
+        padding: 20px 60px;
     }
+  }
+
+  @media (max-width: 426px){
+    
   }

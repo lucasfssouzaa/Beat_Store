@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -18,13 +19,19 @@
     </div>
     <div id="icons">
       <a href="./carrinho" id="car"><i class="material-icons">shopping_cart</i></a>
-    <div class="dropdown">
-      <i id="acount" class="material-icons">person</i>
-      <div class="dropdown-content">
-        <a href="./login">Login</a>
-        <a href="./cadastro">Criar Conta</a>
+
+
+      <div class="dropdown">
+        <i id="acount" class="material-icons">person</i>
+        <div class="dropdown-content">
+          <a href="./login" id="logar">Login</a>
+          <a href="./cadastro" id="criar">Criar Conta</a>
+          <a href="javascript:void(0);" id="logado" onclick="window.sair()">Sair</a>
+        </div>
       </div>
-    </div>
+      
+          
+
     </div>
   </header>
   <app-root></app-root>

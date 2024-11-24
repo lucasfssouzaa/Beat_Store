@@ -3,9 +3,9 @@
     "/",
     "/cadastro",
     "/carrinho",
+    "/detalhe",
     "/esqueci-senha",
     "/login",
-    "/produto",
     "/vitrine"
   ]
 }

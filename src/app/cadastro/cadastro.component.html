@@ -1,30 +1,16 @@
 <main>
-    <div class="cadastro-box">
-        <h2>Cadastre-se</h2>
-    <div class="div-cadastro">
-        <p id="usu-txt">Usuário</p>
-        <input id="usu" type="text" name="usuario" placeholder="Informe seu usuário">
-    </div>
-    <div class="div-cadastro">
-        <p id="cpf-txt">Informe seu CPF</p>
-        <input id="usu" type="text" name="usuario" placeholder="CPF">
-    </div>
-    <div class="div-cadastro">
-        <p id="senha-txt">Senha</p>
-        <input id="senha" type="password" name="senha" placeholder="Informe sua senha">
-    </div>
-    <div class="div-cadastro">
-        <p id="confirmsenha-txt">Confirma a Senha</p>
-        <input id="senha" type="password" name="senha" placeholder="Confirma a Senha">
-    </div>
-    <div class="div-cadastro">
-        <p id="email-txt">Informe seu E-mail</p>
-        <input id="usu" type="text" name="email" placeholder="E-mail">
-    </div>
-    <p>Já tem conta? <a href="./login">Faça o Login</a></p>
     <div id="cadastro">
-        <input type="submit" value="Cadastre-se">
-    </div>
+    <h2>Cadastre-se</h2>
+    {{mensagem}}<br>
+    <p>Nome:</p> <input type="text" [(ngModel)]="obj.nome"><br>
+    <p>Telefone:</p> <input type="text" [(ngModel)]="obj.telefone"><br>
+    <p>E-mail:</p><input type="email" [(ngModel)]="obj.email"><br>
+    <p>{{ mensagemEmail }}</p>
+    <p>Senha:</p><input type="password" [(ngModel)]="obj.senha"><br>
+    <p>{{ mensagemSenha }}</p>
+    <p>Confirmar Senha:</p> <input type="password" [(ngModel)]="confirmarSenha"><br>
+    <p>Já possui conta? <a href="./login">Faça o Login</a></p>
+    <button (click)="gravar();">Cadastre-se</button>
     </div>
 </main>
 
